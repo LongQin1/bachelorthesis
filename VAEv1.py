@@ -428,6 +428,7 @@ outputs = net.sampling(64)
 #x_hat = outputs["x_hat"]
 x= outputs["x"]
 print(x)
+torch.save(x, 'sample.pt')
 # Reconstructions
 f, axarr = plt.subplots(figsize=(10, 10))
 ax = axarr
