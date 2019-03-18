@@ -163,7 +163,8 @@ class VariationalAutoencoder(nn.Module):
         z =torch.randn(64, 4)
         x = self.decoder(z) 
         x = torch.sigmoid(x).detach()
-        #x_hat = torch.mean(x, dim=1).detach()
+      #  x_hat = torch.mean(x, dim=1).detach()
+      #  print(x)
         
       #  outputs["x_hat"] = x_hat
         outputs["x"] = x
