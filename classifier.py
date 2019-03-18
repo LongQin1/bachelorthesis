@@ -22,7 +22,7 @@ torch.backends.cudnn.enabled = False
 torch.manual_seed(random_seed)
 
 train_loader = torch.utils.data.DataLoader(
-  torchvision.datasets.FashionMNIST('/sample.pt', train=True, download=True,
+  torchvision.datasets.MNIST('/sample.pt', train=True, download=True,
                              transform=torchvision.transforms.Compose([
                                torchvision.transforms.ToTensor(),
                                torchvision.transforms.Normalize(
